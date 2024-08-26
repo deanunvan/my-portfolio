@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="ri-close-fill" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openmenu( )"></i>
+            </nav>
+
+            <!-- -------------about----------- -->
+
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/Images/about me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there! I'm a web developer skilled in HTML, CSS, and JavaScript. I also design with Figma and CorelDraw and have a bit of digital marketing experience. I love teaching kids to code with Scratch and am always eager to learn and grow. Let's create something amazing!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <section id="skills">
+                                <h6 class="skills-head">HTML  80%</h6>
+                                <div class="html"><div class="percent1"></div></div>
+                        
+                                <h6 class="skills-head">CSS 77%</h6>
+                                <div class="html"><div class="percent2"></div></div>
+                        
+                                <h6 class="skills-head">JavaScript  10%</h6>
+                                <div class="html"><div class="percent6"></div></div>
+                        
+                                <h6 class="skills-head">Web Designing  75%</h6>
+                                <div class="html"><div class="percent3"></div></div>
+                        
+                                <h6 class="skills-head">Mobile Application Designing  65%</h6>
+                                <div class="html"><div class="percent4"></div></div>
+                        
+                                <h6 class="skills-head">Graphic Designing  70%</h6>
+                                <div class="html"><div class="percent5"></div></div>
+                            </section>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>UX/UX Design with figma and corelDraw</li>
+                            <li><span>2024</span><br>html,Css and JS, Responsive Web Development </li>
+                            <li><span>2024</span><br>Digital marketing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>UX/UX Design Training at Uncommon.org</li>
+                            <li><span>2024</span><br>Currently doing Responsive Web Development at Uncommon.org with html, css and JavaScript</li>
+                            <li><span>2024</span><br>Digital marketing  at Uncommon.org</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Deanunvan Thanda.<i class="ri-heart-fill"></i> Portfolio Website</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

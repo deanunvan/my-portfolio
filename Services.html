@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="ri-close-fill" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openmenu( )"></i>
+            </nav>
+
+              <!-- --------services----- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Responsive Web Dev</h2>
+                    <p>I build websites that look great on any device. From phones to desktops, my designs ensure a smooth and enjoyable user experience.</p>
+                </div>
+
+                <div>
+                    <i class="ri-crop-line"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>I create user-friendly and visually appealing designs. My goal is to make sure that users have a great experience, whether they're browsing a website or using an app.</p>                        
+                </div>
+
+                <div>
+                    <i class="ri-app-store-fill"></i>
+                    <h2>App Design</h2>
+                    <p>I design intuitive and engaging apps. Using tools like Figma and CorelDraw, I ensure every app is easy to use and looks fantastic, providing a seamless experience for users.</p>
+                </div>
+            </div>
+
+            <div class="services-list">
+                <div>
+                    <i class="ri-bear-smile-fill"></i>
+                    <h2>Scratch</h2>
+                    <p>I enjoy teaching kids how to code with Scratch. It's a fun and interactive way to introduce them to programming and help them build their own projects while sparking their creativity and interest in technology.</p>
+                    <a href="Gallery.html">View Gallery</a>
+                </div>
+
+                <div>
+                    <i class="ri-shake-hands-fill"></i>
+                    <h2>Digital Marketing</h2>
+                    <p>I have basic knowledge of digital marketing, helping to promote websites and apps effectively. I use strategies that increase online visibility and engage audiences, ensuring our projects reach and resonate with the right people.</p>
+                </div>
+
+                <div>
+                    <i class="ri-tools-fill"></i>
+                    <h2>Tools</h2>
+                         <a href="tools.html"><i class="ri-external-link-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Deanunvan Thanda.<i class="ri-heart-fill"></i> Portfolio Website</p>
+    </div>
+    </div>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

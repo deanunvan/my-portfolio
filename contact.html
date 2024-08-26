@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="ri-close-fill" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openmenu( )"></i>
+            </nav>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Massege"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    <a href="./assets/images/Male Persona [ Deanunvan ].pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-left">
+                    <p><i class="ri-send-plane-fill"></i>deanunvant@gmail.com</p>
+                    <p><i class="ri-phone-line"></i>0775380129/0718898569</p>
+                    <div class="social-iconss">
+                        <a href="https://github.com/"><i class="ri-github-line"></i></a>
+                        <a href="https://linkedin.com/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://whatsapp.com/"><i class="ri-whatsapp-fill"></i></a>
+                    </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Deanunvan Thanda.<i class="ri-heart-fill"></i> Portfolio Website</p>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykupfvCzm0q6flpu2NmJ5okSUlCYn32uWB04QQWkJuLMRDaJuw4Vfe53nAGgpKNOdc/exec'
+    const form = document.forms['submit-to-google-sheet']
+     const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

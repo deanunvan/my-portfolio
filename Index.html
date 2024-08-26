@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Portfolio</title> 
+    <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css"> -->
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="ri-close-fill" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openmenu( )"></i>
+            </nav>
+
+            <div class="flexed">
+    
+                <div class="all">
+                    <h4 class="hello">HELLO!</h4>
+                    <h1 class="deanunvan">I'm <br> DEANUNVAN <span>THANDA.</span></h1>
+                    <div class="social-icons">
+                        <a href="https://github.com/"><i class="ri-github-fill"></i></i></a>
+                        <a href="https://linkedin.com/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://whatsapp.com/"><i class="ri-whatsapp-fill"></i></a>
+                    </div>
+                    <h4 class="developer"><em>I am a Developer, <span>UX/UI Designer!!</span></em></h4>
+                </div>
+
+                <div class="home-picture">
+                    <img src="./Assets/Images/home picture copy.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Deanunvan Thanda.<i class="ri-heart-fill"></i> Portfolio Website</p>
+            </div>
+    </div>
+
+        <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

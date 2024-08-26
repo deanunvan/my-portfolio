@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./Css/Style.css">
+    <link
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="ri-close-fill" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line" onclick="openmenu( )"></i>
+            </nav>
+
+            <div id="portfolio">
+                <div class="container"></div>
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./Assets/Images/q.jpg" alt="">
+                        <div class="layer">
+                            <h3>VIEW THE PROJECT</h3>
+                            <a href="#"><i class="ri-external-link-fill"></i></a>
+                        </div>
+
+                        <div class="layer-1">
+                            <h3>TIGZOZO</h3>
+                            <p>A responsive website with an option of dark theme.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./Assets/Images/w.jpg" alt="">
+                        <div class="layer">
+                            <h3>VIEW THE PROJECT</h3>
+                            <a href="https://github.com/deanunvan/Zim-E-passports-Project.git"><i class="ri-external-link-fill"></i></a>
+                        </div>
+
+                        <div class="layer-1">
+                            <h3>Zim E-Passports</h3>
+                            <p>A website where you can apply a passport online in the camfort of your home.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./Assets/Images/e.jpg" alt="">
+                        <div class="layer">
+                            <h3>VIEW THE DESIGNS</h3>
+                            <a href="#"><i class="ri-external-link-fill"></i></a>
+                        </div>
+
+                        <div class="layer-1">
+                            <h3>DESIGN PROJECTS</h3>
+                            <p>Here you will find all the designed projects including the Web Designs, App Designs and Graphic Designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/deanunvan" class="btn">See more</a>
+            </div>
+
+            <div class="copyright">
+                <p>Deanunvan Thanda.<i class="ri-heart-fill"></i> Portfolio Website</p>
+            </div>
+    </div>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
